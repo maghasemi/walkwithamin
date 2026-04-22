@@ -12,7 +12,7 @@
     --dark: #0e0e0e;
     --dark2: #141414;
     --border: #1e1e1e;
-    --grey: #666;
+    --grey: #999;
     --light: #f0ede8;
   }
 
@@ -273,6 +273,46 @@
     #contact { padding: 80px 24px; }
     .contact-inner { grid-template-columns: 1fr; gap: 40px; }
     footer { flex-direction: column; gap: 16px; text-align: center; padding: 32px 24px; }
+  }
+
+  /* RESPONSIVE — MOBILE */
+  @media (max-width: 480px) {
+    nav { padding: 16px 20px; }
+    .nav-links { gap: 14px; }
+    .nav-links a { font-size: 9px; letter-spacing: 2px; }
+    .hero { padding: 0 20px 80px; min-height: 100svh; }
+    .hero-title { font-size: clamp(40px, 12vw, 64px); margin-bottom: 28px; }
+    .hero-tag { font-size: 9px; margin-bottom: 20px; }
+    .hero-sub { font-size: 11px; }
+    .hero-scroll { right: 20px; bottom: 60px; }
+    .hero-propeller { width: 300px; height: 300px; right: -60px; }
+    .hero-photo-wrap { height: 55%; }
+    #about, #portfolio, #services { padding: 60px 20px; }
+    #contact { padding: 60px 20px; }
+    .section-label { margin-bottom: 40px; font-size: 8px; }
+    .about-title { font-size: clamp(28px, 8vw, 40px); }
+    .about-stats { gap: 28px; flex-wrap: wrap; }
+    .stat-num { font-size: 36px; }
+    .about-text { font-size: 12px; }
+    .portfolio-grid { gap: 4px; }
+    .service-card { aspect-ratio: 3/2; }
+    .card-content { padding: 28px 24px; }
+    .card-title { font-size: clamp(18px, 5vw, 26px); }
+    .card-desc { font-size: 10px; }
+    .pkg-header { padding: 32px 20px 24px; flex-direction: column; align-items: flex-start; gap: 16px; }
+    .pkg-header-title { font-size: 28px; }
+    .pkg-grid { padding: 0 20px; }
+    .pkg-card { padding: 32px 24px; }
+    .delivery-bar { grid-template-columns: 1fr 1fr; margin: 2px 20px 0; }
+    .delivery-item { padding: 18px 16px; }
+    .contact-title { font-size: clamp(32px, 10vw, 56px); }
+    .contact-link { gap: 12px; padding: 22px 0; }
+    .contact-link-label { width: 60px; font-size: 8px; }
+    .contact-link-value { font-size: 12px; }
+    footer { padding: 28px 20px; }
+    .cursor, .cursor-ring { display: none; }
+    body { cursor: auto; }
+    .card-btn, .pkg-close { cursor: pointer; }
   }
 </style>
 </head>
