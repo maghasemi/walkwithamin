@@ -42,7 +42,7 @@
   .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--light); text-decoration: none; position: relative; z-index: 1; letter-spacing: 1px; }
   .nav-logo span { color: var(--y); }
   .nav-links { display: flex; gap: 44px; list-style: none; position: relative; z-index: 1; }
-  .nav-links a { text-decoration: none; color: rgba(240,237,232,0.6); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; transition: color 0.3s; }
+  .nav-links a { text-decoration: none; color: rgba(240,237,232,0.85); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; transition: color 0.3s; }
   .nav-links a:hover { color: var(--y); }
 
   /* HERO */
@@ -159,8 +159,8 @@
   #services { padding: 120px 60px; background: var(--dark2); }
   .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
   .service-card { position: relative; overflow: hidden; cursor: none; aspect-ratio: 16/10; background: var(--dark); }
-  .service-card .card-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.07; transition: transform 0.8s cubic-bezier(0.23,1,0.32,1), opacity 0.5s; }
-  .service-card:hover .card-svg { transform: scale(1.05) rotate(2deg); opacity: 0.14; }
+  .service-card .card-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0.45; transition: transform 0.8s cubic-bezier(0.23,1,0.32,1), opacity 0.5s; }
+  .service-card:hover .card-svg { transform: scale(1.05) rotate(2deg); opacity: 0.65; }
   .card-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(14,14,14,0.88) 0%, rgba(14,14,14,0.45) 100%); transition: background 0.4s; }
   .service-card:hover .card-overlay { background: linear-gradient(135deg, rgba(14,14,14,0.94) 0%, rgba(14,14,14,0.6) 100%); }
   .service-card::before { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 3px; background: var(--y); transition: width 0.5s cubic-bezier(0.23,1,0.32,1); z-index: 3; }
@@ -232,7 +232,7 @@
   .contact-links { display: flex; flex-direction: column; gap: 0; margin-top: 8px; }
   .contact-link { display: flex; align-items: center; gap: 20px; padding: 28px 0; border-bottom: 1px solid rgba(17,17,17,0.12); text-decoration: none; transition: gap 0.3s; overflow: hidden; }
   .contact-link:hover { gap: 28px; }
-  .contact-link-label { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(17,17,17,0.45); width: 110px; flex-shrink: 0; }
+  .contact-link-label { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(17,17,17,0.65); width: 110px; flex-shrink: 0; }
   .contact-link-value { font-size: 14px; font-weight: 300; color: var(--dark); display: block; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
   .contact-arrow { margin-left: auto; color: rgba(17,17,17,0.3); font-size: 18px; transition: transform 0.3s, color 0.3s; }
   .contact-link:hover .contact-arrow { transform: translateX(6px); color: var(--dark); }
@@ -241,7 +241,7 @@
   footer { background: var(--dark); padding: 40px 60px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); }
   .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 16px; color: var(--grey); }
   .footer-logo span { color: var(--y); }
-  .footer-copy { font-size: 9px; letter-spacing: 2px; color: #333; text-transform: uppercase; }
+  .footer-copy { font-size: 9px; letter-spacing: 2px; color: #888; text-transform: uppercase; }
 
   /* REVEAL */
   .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
