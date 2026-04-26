@@ -230,10 +230,10 @@
   .contact-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5vw, 72px); font-weight: 300; color: var(--dark); line-height: 1; margin-bottom: 24px; }
   .contact-sub { font-size: 11px; letter-spacing: 2px; color: rgba(17,17,17,0.55); line-height: 2; text-transform: uppercase; }
   .contact-links { display: flex; flex-direction: column; gap: 0; margin-top: 8px; }
-  .contact-link { display: flex; align-items: center; gap: 20px; padding: 28px 0; border-bottom: 1px solid rgba(17,17,17,0.12); text-decoration: none; transition: gap 0.3s; }
+  .contact-link { display: flex; align-items: center; gap: 20px; padding: 28px 0; border-bottom: 1px solid rgba(17,17,17,0.12); text-decoration: none; transition: gap 0.3s; overflow: hidden; }
   .contact-link:hover { gap: 28px; }
-  .contact-link-label { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(17,17,17,0.45); width: 80px; flex-shrink: 0; }
-  .contact-link-value { font-size: 14px; font-weight: 300; color: var(--dark); }
+  .contact-link-label { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: rgba(17,17,17,0.45); width: 110px; flex-shrink: 0; }
+  .contact-link-value { font-size: 14px; font-weight: 300; color: var(--dark); display: block; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
   .contact-arrow { margin-left: auto; color: rgba(17,17,17,0.3); font-size: 18px; transition: transform 0.3s, color 0.3s; }
   .contact-link:hover .contact-arrow { transform: translateX(6px); color: var(--dark); }
 
@@ -538,7 +538,7 @@
         <h2 class="card-title">Real Estate<br>Photography & Video</h2>
         <p class="card-desc">Interior & exterior photography, cinematic walkthroughs and aerial drone footage for property listings.</p>
         <div class="card-footer">
-          <div class="card-price"><span>€299</span> starting from</div>
+          <div class="card-price">starting from <span>€299</span></div>
           <a class="card-btn">See Packages →</a>
         </div>
       </div>
@@ -600,7 +600,7 @@
         <h2 class="card-title">Hospitality &<br>Brand Content</h2>
         <p class="card-desc">Cinematic Reels, visual content and aerial footage for hotels, restaurants and cafés.</p>
         <div class="card-footer">
-          <div class="card-price"><span>€350</span> starting from</div>
+          <div class="card-price">starting from <span>€350</span></div>
           <a class="card-btn">See Packages →</a>
         </div>
       </div>
@@ -657,7 +657,7 @@
         <h2 class="card-title">Aerial &<br>Drone Content</h2>
         <p class="card-desc">Stunning 4K aerial footage with DJI Mavic 4 Pro Hasselblad for any project requiring a view from above.</p>
         <div class="card-footer">
-          <div class="card-price"><span>€400</span> starting from</div>
+          <div class="card-price">starting from <span>€400</span></div>
           <a class="card-btn">See Packages →</a>
         </div>
       </div>
@@ -709,7 +709,7 @@
         <h2 class="card-title">Institutional<br>& Events</h2>
         <p class="card-desc">Promotional films for universities, companies and cities. Event coverage and documentary-style content.</p>
         <div class="card-footer">
-          <div class="card-price"><span>€600</span> starting from</div>
+          <div class="card-price">starting from <span>€600</span></div>
           <a class="card-btn">See Packages →</a>
         </div>
       </div>
